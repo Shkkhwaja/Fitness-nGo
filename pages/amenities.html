@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/third-nGo-logo.jpg" type="image/x-icon">
+        <title>FITNESS nGO _ Amenities</title>
+    </head>
+<script src="/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+$("#pass-btn").click(function(){
+    $(".free-pass-form").fadeIn("slow")
+
+})
+$("#close-btn").click(function(){
+    $(".free-pass-form").fadeOut("1000")
+
+})
+
+})
+
+</script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+:root {
+    --simple-black: #000000;
+    --green: #00fb00;
+    --nav-bg: #fafafa;
+    --font_1: poppins-semibold, poppins, sans-serif;
+    --font_2: normal normal normal 30px/1.4em poppins-semibold, poppins, sans-serif;
+    --border: 2px solid cyan;
+}
+
+nav {
+    display: flex;
+    background-color: var(--nav-bg);
+    position: fixed;
+    top: -1em;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+ul {
+    display: inline-flex;
+    gap: 3em;
+    position: absolute;
+    left: 20%;
+    top: 2.5em;
+
+}
+a{
+    text-decoration: none;
+}
+
+ul li:visited{
+    color: var(--green);
+}
+
+
+ul li {
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: start;
+    color: var(--simple-black);
+
+
+}
+
+.nav-logo {
+    margin-top: -2em;
+    height: 120px;
+    width: 220px;
+    position: relative;
+    top: 25px;
+}
+
+.nav-btn {
+    position: relative;
+    left: 52em;
+    top: 1.5em;
+
+}
+
+.nav-btn-1 {
+    padding: 18px 30px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: var(--green);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.container{
+    height: 100vh;
+    width: auto;
+    background-image: url(/img/pages/amenities.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    position: relative;
+}
+
+h1{
+    position: relative;
+    top: 2.5em;
+    text-align: center;
+    font-size: 180px;
+    color: black;
+    font-family: var(--font_1);
+    letter-spacing: 10px;
+
+}
+
+.footer-container{
+    height: 250px;
+    width: 114.5%;
+    background-color: var(--nav-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    position: relative;
+    top: 0;
+    left: -8em;
+    
+
+}
+
+.footer-container img{
+    height: 180px;
+    position: relative;
+    top: -3em;
+    left: -8em;
+}
+
+
+ /* free pass form  */
+
+ .free-pass-form{
+    height: 92vh;
+    width: 25%;
+    background-color: var(--simple-black);
+    position: fixed;
+    z-index: 10;
+    top: 4.2em;
+    right: 0;
+    display: none;
+    
+}
+#close-btn{
+    height: 20px;
+    position: relative;
+    left: 18.5em;
+    top: -16em;
+    
+}
+
+.free-pass-form img{
+    height: 300px;
+    position: relative;
+    left: 2em;
+    top: 2em;
+}
+.free-pass-form h4{
+    position: relative;
+    top: -3em;
+    text-align: center;
+    font-family: var(--font_1);
+    color: var(--green);
+    padding: 0 0.8em;
+}
+
+.free-pass-form form{
+    height: 280px;
+    text-align: center;
+    margin-top: -1em;
+}
+.free-pass-form label{
+    font-size:16px;
+    font-family:monospace;
+    color: var(--nav-bg);
+    position: relative;
+    top: 15px;
+    left: -103px;
+}
+.free-pass-form input{
+    height: 30px;
+    width: 22em;
+    margin-top: 15px;
+    border: 2px solid #00fb00;
+    border-radius:2px;
+    
+}
+
+.free-pass-form input:hover{
+    background-color: var(--green);
+
+}
+
+.free-pass-form input[type="submit"]{
+
+background-color: var(--green);
+width: 10em;
+padding: 0 20px;
+font-size: 18px;
+font-weight: 700;
+font-family:monospace;
+
+}
+
+
+/* free pass ending */
+
+</style>
+<body>
+    <nav>
+        <a href="/index.html"> <img src="/img/main-logo.png" alt="404" class="nav-logo"></a>
+        <ul>
+            <a href="/index.html">
+                <li>home</li>
+            </a>
+            <a href="/pages/training.html">
+                <li>training</li>
+            </a>
+            <a href="/pages/facilities.html">
+                <li>facilities</li>
+            </a>
+            <a href="/pages/amenities.html">
+                <li>amenities</li>
+            </a>
+            <a href="/pages/join.html">
+                <li>join</li>
+            </a>
+            <a href="/pages/about.html">
+                <li>about</li>
+            </a>
+            <a href="/pages/blog.html">
+                <li>blog</li>
+            </a>
+        </ul>
+        <div class="nav-btn">
+            <a href="/pages/join.html"><button class="nav-btn-1">Join Now</button></a>
+            <button class="nav-btn-1" id="pass-btn">FREE PASS</button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h1>AMENITIES</h1>
+
+        </div>
+    </section>
+
+
+    <div class="free-pass-form">  <!--  pass section -->
+        <svg preserveAspectRatio="xMidYMid meet" data-bbox="82.189 55.096 481.811 481.808" xmlns="http://www.w3.org/2000/svg" viewBox="82.189 55.096 481.811 481.808" role="presentation" aria-hidden="true" id="close-btn">
+            <g>
+                <path d="M531.936 536.904L323.094 328.063 114.253 536.904l-32.064-32.062L291.032 296 82.189 87.157l32.064-32.061 208.842 208.842L531.936 55.096 564 87.157 355.155 296 564 504.842l-32.064 32.062z" fill="#00fb00"></path>
+            </g>
+        </svg>
+        
+
+            <img src="/img/pages/form-image.jpg">
+            <h4>COMPLETE THIS FORM AND A MEMBERSHIP
+                ADVISOR WILL CONTACT YOU TO
+                SCHEDULE YOUR DAY PASS
+                MUST BE 18+ AND LOCAL RESIDENT</h4>
+
+                <form action="https://getform.io/f/5204d34c-a114-42a5-b74e-a85ef2f7be2e" method="POST">
+                    <label for="fame">First name </label><br>
+                    <input type="text" name="fname"><br>
+                    <label for="lname">Last name </label><br>
+                    <input type="text" name="lname"><br>
+                    <label for="num">Mobile no </label><br>
+                    <input type="text" name="num" pattern="[0-9]{10}"><br>
+
+                    <input type="submit">
+                </form>
+    </div>  <!--  pass section End -->
+
+
+    <footer>
+        <div class="footer-container">
+            <img src="/img/main-logo.png">
+            <p>© 2023 FITNESS nGO</p>
+        </div>
+    </footer>
+</body>
+</html>

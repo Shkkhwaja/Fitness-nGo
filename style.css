@@ -17,6 +17,7 @@ body {
     --font_1: poppins-semibold, poppins, sans-serif;
     --font_2: normal normal normal 30px/1.4em poppins-semibold, poppins, sans-serif;
     --border: 2px solid cyan;
+    --font-3: normal normal normal 15px/1.4em futura-lt-w01-book,futura-lt-w05-book,sans-serif;
 }
 
 nav {
@@ -421,31 +422,111 @@ ul li {
     font-size: 25px;
 }
 
+
+   /* free pass form  */
+
+.free-pass-form{
+    height: 92vh;
+    width: 25%;
+    background-color: var(--simple-black);
+    position: fixed;
+    z-index: 10;
+    top: 4.2em;
+    right: 0;
+    display: none;
+    
+}
+#close-btn{
+    height: 20px;
+    position: relative;
+    left: 18.5em;
+    top: -16em;
+    
+}
+
+.free-pass-form img{
+    height: 300px;
+    position: relative;
+    left: 2em;
+    top: 2em;
+}
+.free-pass-form h4{
+    position: relative;
+    top: -3em;
+    text-align: center;
+    font-family: var(--font_1);
+    color: var(--green);
+    padding: 0 0.8em;
+}
+
+.free-pass-form form{
+    height: 280px;
+    text-align: center;
+    margin-top: -1em;
+}
+.free-pass-form label{
+    font-size:16px;
+    font-family:monospace;
+    color: var(--nav-bg);
+    position: relative;
+    top: 15px;
+    left: -103px;
+}
+.free-pass-form input{
+    height: 30px;
+    width: 22em;
+    margin-top: 15px;
+    border: 2px solid #00fb00;
+    border-radius:2px;
+    
+}
+
+.free-pass-form input:hover{
+    background-color: var(--green);
+
+}
+
+.free-pass-form input[type="submit"]{
+
+background-color: var(--green);
+width: 10em;
+padding: 0 20px;
+font-size: 18px;
+font-weight: 700;
+font-family:monospace;
+
+}
+
     /* media query for mobile  */
 
     @media screen and (max-device-width: 768px) { 
-        
+
+
+
   /* nav-bar */
 
 
   nav {
-    background-color: var(--nav-bg);
-    border: var(--border);
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    top: -3em;
     left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: transparent;
+    border: var(--border);
     width: 100vw;
-    display: none;
-
+    
 }
 
 ul {
     display: inline-flex;
-    gap: 3em;
+    gap: 0;
     position: absolute;
+    left: 0;
     top: 2.5em;
-    left: 2em;
-    border: var(--border);
     display: none;
-
 
 }
 a{
@@ -455,8 +536,6 @@ a{
 
 ul li:visited{
     color: var(--green);
-    display: none;
-
 }
 
 
@@ -471,7 +550,7 @@ ul li {
     letter-spacing: 1px;
     text-align: start;
     color: var(--simple-black);
-    display: none;
+    border: var(--border);
 
 
 }
@@ -479,19 +558,15 @@ ul li {
 .nav-logo {
     margin-top: -2em;
     height: 100px;
-    width: 220px;
+    width: 180px;
     position: relative;
-    top: 25px;
-
+    top: 58px;
 }
 
 .nav-btn {
     position: relative;
-    left: 0;
+    left: 52em;
     top: 1.5em;
-    border: var(--border);
-    display: none;
-
 
 }
 
@@ -503,8 +578,6 @@ ul li {
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 1px;
-    border: var(--border);
-    display: none;
 }
   
 
@@ -725,6 +798,7 @@ ul li {
             width: 100vw;
             top: 33em;
             left: 0;
+            border: var(--border);
 
         }
         

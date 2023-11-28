@@ -4,10 +4,9 @@ const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true
 });
-// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
 
-// tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+
 ScrollTrigger.scrollerProxy("#main", {
   scrollTop(value) {
     return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
@@ -279,3 +278,25 @@ gsap.from(".exp-content-text-2", {
 
   }
 });
+
+
+//    JQuery
+
+
+$(document).ready(function(){
+
+    $("#pass-btn").click(function(){
+        $(".free-pass-form").fadeIn("slow")
+
+    })
+    $("#close-btn").click(function(){
+        $(".free-pass-form").fadeOut("1000")
+
+    })
+
+})
+
+let btnOne = document.getElementsByClassName("nav-btn-1")[0]
+btnOne.addEventListener('click',()=> {
+    alert("Go To JOIN Section 👉")
+})
