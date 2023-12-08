@@ -796,7 +796,26 @@ ul li {
         width: 100vw;
         position: relative;
 
+<<<<<<< HEAD
     }
+=======
+        }
+        
+        .about-container img {
+            position: absolute;
+            top: 20em;
+            left: 1rem;
+            height: 12em;
+            
+        }
+        
+        .exp-content {
+            position: relative;
+            height: 55vh;
+            width: 100vw;
+            top: 33em;
+            left: 0;
+>>>>>>> 8fe2874195434c541f032bbfa0749ab1f77f7d9b
 
     .about-container img {
         position: absolute;
@@ -915,6 +934,7 @@ ul li {
         height: 25em;
 
     }
+<<<<<<< HEAD
 
     .exp-content-3 img:nth-child(2) {
         position: relative;
@@ -1025,3 +1045,5 @@ ul li {
     }
 
 }
+=======
+>>>>>>> 8fe2874195434c541f032bbfa0749ab1f77f7d9b
