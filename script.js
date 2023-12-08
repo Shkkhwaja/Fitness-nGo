@@ -280,7 +280,7 @@ gsap.from(".exp-content-text-2", {
 });
 
 
-//    JQuery
+//    jQuery for Join Form
 
 
 $(document).ready(function(){
@@ -300,3 +300,4 @@ let btnOne = document.getElementsByClassName("nav-btn-1")[0]
 btnOne.addEventListener('click',()=> {
     alert("Go To JOIN Section 👉")
 })
+
