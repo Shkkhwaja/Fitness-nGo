@@ -84,8 +84,27 @@ ul li {
     letter-spacing: 1px;
     text-align: start;
     color: var(--simple-black);
+position: relative;
 
+}
 
+nav ul li::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    background-color: var(--green);
+    bottom: -5px;
+    left: 0;
+    right: 5px;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+    background-color: var(--green);
 }
 
 .nav-logo {

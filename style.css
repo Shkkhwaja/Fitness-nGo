@@ -63,7 +63,25 @@ ul li {
     text-align: start;
     color: var(--simple-black);
 
+}
 
+ nav ul li::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    background-color: var(--green);
+    bottom: -5px;
+    left: 0;
+    right: 5px;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+    background-color: var(--green);
 }
 
 .nav-logo {
@@ -429,6 +447,19 @@ ul li {
     align-items: center;
     justify-content: center;
     font-size: 25px;
+}
+.footer-container p:nth-child(1){
+    position: relative;
+    left: 4em;
+
+}
+
+.footer-container p:nth-child(2){
+    position: relative;
+    top: -6em;
+    left: -34em;
+    letter-spacing: 2px;
+    font-size: 20px;
 }
 
 
@@ -812,7 +843,6 @@ ul li {
         width: 100vw;
         top: 33em;
         left: 0;
-        border: var(--border);
 
     }
 
@@ -1023,5 +1053,6 @@ ul li {
         position: relative;
         top: 75em;
     }
+    
 
 }
